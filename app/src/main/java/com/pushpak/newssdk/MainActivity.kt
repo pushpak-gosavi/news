@@ -10,6 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.pushpak.mynews.Addition
+import com.pushpak.mynews.addTwoNumber
 import com.pushpak.newssdk.ui.theme.NewsSDKTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +24,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                  val add =  Addition(10,20)
+                    println(add.addTwoNumber())
                     Greeting("Android")
                 }
             }
