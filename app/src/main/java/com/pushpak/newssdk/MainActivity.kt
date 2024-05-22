@@ -78,6 +78,8 @@ fun HeadLineList(mainViewModel:MainViewModel) {
     val headLines by mainViewModel.headLines.observeAsState()
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(12.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
         content = {
             headLines?.sources?.let {
                 items(count = it.size) { headLine ->
