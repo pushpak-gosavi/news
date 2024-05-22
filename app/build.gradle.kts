@@ -81,4 +81,8 @@ dependencies {
 
     // Coroutine Lifecycle Scopes
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
+
+    // Composable Live Data
+    implementation ("androidx.compose.runtime:runtime-livedata:1.6.7")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.0")
 }
