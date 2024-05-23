@@ -32,6 +32,15 @@ android {
         jvmTarget = "1.8"
     }
 }
+publishing{
+    publications{
+        register<MavenPublication>("release"){
+            afterEvaluate{
+                from(components["release"])
+            }
+        }
+    }
+}
 dependencies {
 
     implementation("androidx.core:core-ktx:1.13.1")
